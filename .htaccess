@@ -1,0 +1,20 @@
+#Shaft: You may remove the Hash(#) & replace the URL for SSL redirection
+RewriteEngine On
+Options -Indexes
+
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://safaricoollab.com/$1 [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?$1 [NC,QSA]
+
+RewriteRule ^(package.json) -   [F,L,NC]
+
+#########################################################################
+
+#########################################################################
+#########################################################################
+
+#########################################################################
+#########################################################################

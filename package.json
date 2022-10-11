@@ -1,0 +1,49 @@
+{
+    "site_name": "ZeltaPay",
+    "version": 1,
+    "site_url": "zeltapay.com",
+    "description": "",
+    "keywords": "",
+    "connects": {
+        "social": {
+            "facebook": "https://facebook.com/zeltapay",
+            "twitter": "https://twitter.com/zeltapay",
+            "instagram": "https://instagram.com/zeltapay",
+            "whatsapp": "https://wa.me/+2347042571871"
+        },
+        "contact": {
+            "telephone": "+2347042571871",
+            "email": "support@zeltapay.com",
+            "address": "17 Gafari Balogun Street Lagos"
+        }
+    },
+    "maintenance": false,
+    "database": {
+        "hostname": "localhost",
+        "username": "root",
+        "password": "",
+        "database": "zeltapay"
+    },
+    "drivers": {
+        "global": [
+            "databaseController",
+            "eloquentController",
+            "oauthController",
+            "sanitizerController",
+            "routesController",
+            "hashingController",
+            "sessionController",
+            "gatesController",
+            "insightController",
+            "paginateController"
+        ],
+        "static": []
+    },
+    "routes": {
+        "/|/home": "homeController@index@ZeltaPay",
+        "/about-us": "homeController@about-us@About Us :: ZeltaPay",
+        "/how-it-works": "homeController@how-it-works@How it works :: ZeltaPay",
+        "/specialist": "homeController@specialist@Specialist :: ZeltaPay",
+        "/contact": "homeController@contact@Contact Us :: ZeltaPay"
+    }
+}

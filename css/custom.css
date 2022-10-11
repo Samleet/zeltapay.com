@@ -1,0 +1,39 @@
+.navbar-brand span {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.mean-nav {
+    /* border-radius: 15px; */
+}
+.is-sticky .mean-menu {
+    margin-top: -35px;
+}
+.get-started-area {
+    position: relative;
+}
+.get-started-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background: url(../images/highlight.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+/* .is-sticky .navbar-brand span {
+    color: #000;
+} */
+.light-gradient {
+    position: absolute;
+    left: -1300px;
+    width: 100%;
+    height: 400px;
+    margin-top: -400px;
+    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, rgba(0, 0, 188, 0.7) 17.55%, rgba(155, 243, 255, 0.7) 27.56%, rgba(174, 211, 255, 0.7) 49.89%, rgba(201, 212, 239, 0.7) 56.53%, rgba(182, 189, 255, 0.7) 65.69%);
+    filter: blur(400px);    
+}
+.payment-features-image .image {
+    background: linear-gradient(#69f, #fff) !important;
+}
